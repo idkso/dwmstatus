@@ -1,11 +1,11 @@
 package cpu
 
 import (
-	"dwmstatus/modules"
 	"fmt"
 	"log"
 	"time"
 
+	"dwmstatus/modules"
 	"github.com/shirou/gopsutil/v3/cpu"
 )
 

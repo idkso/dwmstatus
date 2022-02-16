@@ -1,12 +1,12 @@
 package main
 
 import (
-	"dwmstatus/modules"
 	"log"
 	"os/exec"
 	"strings"
 	"time"
 
+	"dwmstatus/modules"
 	_ "dwmstatus/plugins"
 )
 

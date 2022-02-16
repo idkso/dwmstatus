@@ -1,8 +1,9 @@
 package date
 
 import (
-	"dwmstatus/modules"
 	"time"
+
+	"dwmstatus/modules"
 )
 
 func init() {

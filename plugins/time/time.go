@@ -1,8 +1,11 @@
 package time
 
 import (
-	"time"
 	"dwmstatus/modules"
+	"time"
+
+	"dwmstatus/modules"
+	"time"
 )
 
 func init() {

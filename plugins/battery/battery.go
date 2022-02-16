@@ -2,11 +2,12 @@ package battery
 
 import (
 	"bufio"
-	"dwmstatus/modules"
 	"log"
 	"os"
 	"strings"
 	"time"
+
+	"dwmstatus/modules"
 )
 
 func init() {

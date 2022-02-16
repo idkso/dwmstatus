@@ -1,11 +1,11 @@
 package uptime
 
 import (
-	"dwmstatus/modules"
 	"fmt"
 	"log"
 	"time"
 
+	"dwmstatus/modules"
 	"github.com/shirou/gopsutil/v3/host"
 )
 
