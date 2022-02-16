@@ -22,10 +22,12 @@ func main() {
 				continue
 			}
 		}
+
 		err := exec.Command("xsetroot", "-name", strings.Join(vals, " | ")).Run()
 		if err != nil {
 			log.Panic(err)
 		}
+
 		time.Sleep(time.Millisecond * 500)
 	}
 }

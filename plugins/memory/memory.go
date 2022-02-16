@@ -18,6 +18,7 @@ func init() {
 func handleMemory(c chan string) {
 	for {
 		c <- getMemory()
+
 		time.Sleep(time.Millisecond * 500)
 	}
 }

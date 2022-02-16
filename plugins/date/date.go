@@ -15,11 +15,11 @@ func init() {
 func handleDate(c chan string) {
 	for {
 		c <- getDate()
+
 		time.Sleep(time.Minute)
 	}
 }
 
 func getDate() string {
-	t := time.Now()
-	return t.Format("Mon 01-02-06")
+	return time.Now().Format("Mon 01-02-06")
 }

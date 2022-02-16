@@ -19,6 +19,7 @@ func init() {
 func handleBattery(c chan string) {
 	for {
 		c <- getBattery()
+
 		time.Sleep(time.Second)
 	}
 }
@@ -28,10 +29,11 @@ func getBattery() string {
 	if err != nil {
 		log.Panic(err)
 	}
-	r := bufio.NewReader(f)
-	s, err := r.ReadString('\n')
+
+	s, err := bufio.NewReader(f).ReadString('\n')
 	if err != nil {
 		log.Panic(err)
 	}
+
 	return strings.TrimSuffix(s, "\n") + "%"
 }

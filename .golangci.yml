@@ -1,2 +1,18 @@
 linters:
   enable-all: true
+  disable:
+    - scopelint # deprecated
+    - interfacer # deprecated
+    - maligned # deprecated
+    - golint # deprecated
+    - gomnd
+    - gochecknoinits
+
+issues:
+  exclude-rules:
+    - path: main.go
+      text: Subprocess launched with a potential tainted input
+    - path: modules/modules.go
+      text: Modules is a global variable
+    - path: plugins/plugins.go
+      text: a blank import should be only in a main or test package
