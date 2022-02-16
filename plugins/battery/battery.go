@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"dwmstatus/modules"
+	"github.com/idkso/dwmstatus/modules"
 )
 
 func init() {

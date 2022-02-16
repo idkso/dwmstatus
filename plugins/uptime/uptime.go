@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"dwmstatus/modules"
+	"github.com/idkso/dwmstatus/modules"
 	"github.com/shirou/gopsutil/v3/host"
 )
 

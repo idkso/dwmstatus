@@ -1,11 +1,9 @@
 package time
 
 import (
-	"dwmstatus/modules"
 	"time"
 
-	"dwmstatus/modules"
-	"time"
+	"github.com/idkso/dwmstatus/modules"
 )
 
 func init() {

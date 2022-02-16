@@ -3,7 +3,7 @@ package date
 import (
 	"time"
 
-	"dwmstatus/modules"
+	"github.com/idkso/dwmstatus/modules"
 )
 
 func init() {

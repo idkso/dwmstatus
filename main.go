@@ -6,8 +6,8 @@ import (
 	"strings"
 	"time"
 
-	"dwmstatus/modules"
-	_ "dwmstatus/plugins"
+	"github.com/idkso/dwmstatus/modules"
+	_ "github.com/idkso/dwmstatus/plugins"
 )
 
 func main() {
