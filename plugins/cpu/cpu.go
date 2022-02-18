@@ -1,11 +1,11 @@
 package cpu
 
 import (
-	"dwmstatus/modules"
 	"fmt"
 	"log"
 	"time"
 
+	"github.com/idkso/dwmstatus/modules"
 	"github.com/shirou/gopsutil/v3/cpu"
 )
 
@@ -18,6 +18,7 @@ func init() {
 func handleCPU(c chan string) {
 	for {
 		c <- getCPU()
+
 		time.Sleep(time.Millisecond * 500)
 	}
 }
@@ -27,17 +28,11 @@ func getCPU() string {
 	if err != nil {
 		log.Panic(err)
 	}
-	var total float64 = 0
+
+	var total float64
 	for _, p := range cper {
 		total += p
 	}
-	usage := int(total)/len(cper)
-	
-	idk := fmt.Sprintf("CPU: %d", int(total)/len(cper))
 
-	if usage > 9 {
-		return idk + "%"
-	} else {
-		return idk + "% "
-	}
+	return fmt.Sprintf("CPU: %d", int(total)/len(cper)) + "% "
 }

@@ -1,11 +1,11 @@
 package memory
 
 import (
-	"dwmstatus/modules"
 	"fmt"
 	"log"
 	"time"
 
+	"github.com/idkso/dwmstatus/modules"
 	"github.com/shirou/gopsutil/v3/mem"
 )
 
@@ -18,6 +18,7 @@ func init() {
 func handleMemory(c chan string) {
 	for {
 		c <- getMemory()
+
 		time.Sleep(time.Millisecond * 500)
 	}
 }

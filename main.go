@@ -1,13 +1,13 @@
 package main
 
 import (
-	"dwmstatus/modules"
 	"log"
 	"os/exec"
 	"strings"
 	"time"
 
-	_ "dwmstatus/plugins"
+	"github.com/idkso/dwmstatus/modules"
+	_ "github.com/idkso/dwmstatus/plugins"
 )
 
 func main() {
@@ -22,10 +22,12 @@ func main() {
 				continue
 			}
 		}
+
 		err := exec.Command("xsetroot", "-name", strings.Join(vals, " | ")).Run()
 		if err != nil {
 			log.Panic(err)
 		}
+
 		time.Sleep(time.Millisecond * 500)
 	}
 }

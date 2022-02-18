@@ -2,7 +2,8 @@ package time
 
 import (
 	"time"
-	"dwmstatus/modules"
+
+	"github.com/idkso/dwmstatus/modules"
 )
 
 func init() {
@@ -14,11 +15,11 @@ func init() {
 func handleTime(c chan string) {
 	for {
 		c <- getTime()
+
 		time.Sleep(time.Second)
 	}
 }
 
 func getTime() string {
-	t := time.Now()
-	return t.Format("3:04:05 PM")
+	return time.Now().Format("3:04:05 PM")
 }

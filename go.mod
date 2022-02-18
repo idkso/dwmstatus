@@ -1,4 +1,4 @@
-module dwmstatus
+module github.com/idkso/dwmstatus
 
 go 1.17
 
