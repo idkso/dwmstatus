@@ -7,6 +7,7 @@ linters:
     - golint # deprecated
     - gomnd
     - gochecknoinits
+    - exhaustivestruct
 
 issues:
   exclude-rules:
