@@ -31,5 +31,13 @@ func getCPU() string {
 	for _, p := range cper {
 		total += p
 	}
-	return fmt.Sprintf("CPU: %d", int(total)/len(cper)) + "%"
+	usage := int(total)/len(cper)
+	
+	idk := fmt.Sprintf("CPU: %d", int(total)/len(cper))
+
+	if usage > 9 {
+		return idk + "%"
+	} else {
+		return idk + "% "
+	}
 }
