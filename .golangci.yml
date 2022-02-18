@@ -16,3 +16,9 @@ issues:
       text: Modules is a global variable
     - path: plugins/plugins.go
       text: a blank import should be only in a main or test package
+    - path: plugins/plugins.go
+      linters:
+        - gci
+        - gofmt
+        - gofumpt
+        - goimports
