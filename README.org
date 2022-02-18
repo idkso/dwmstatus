@@ -13,9 +13,10 @@ edit ~plugins/plugins.go~ to change what is used/what order it is used in
     _ "dwmstatus/plugins/time"
     _ "dwmstatus/plugins/date"
     _ "dwmstatus/plugins/battery"
+    _ "dwmstatus/plugins/wttr"
   )
 #+END_SRC
-this would be ~uptime | cpu | memory | time | date | battery~
+this would be ~uptime | cpu | memory | time | date | battery | weather~
 simply moving one of those in the list dictates where it will end up in the list
 like moving cpu up 1 would make it ~cpu | uptime | memory | ...~
 

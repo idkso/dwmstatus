@@ -7,4 +7,5 @@ import (
 	_ "dwmstatus/plugins/time"
 	_ "dwmstatus/plugins/date"
 	_ "dwmstatus/plugins/battery"
+	_ "dwmstatus/plugins/wttr"
 )
